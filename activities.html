@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Co-curricular Activities & Quiz | Government Inter College Gorangchaur</title>
+  
+  <meta name="description" content="Read about environmental programs, civic awareness workshops, and participate in our interactive General Knowledge school quiz at GIC Gorangchaur.">
+  <meta name="keywords" content="School activities, Environment day, Civic awareness, School Quiz, Interactive game, GIC Gorangchaur activities">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= TOP BAR ================= -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-info">
+        <span>📞 +91 9759220834</span>
+        <span>✉️ gorangchaur@gmail.com</span>
+        <span>📍 Pithoragarh, Uttarakhand</span>
+      </div>
+      <div class="top-bar-udise">
+        UDISE Code: 05070122302
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= HEADER & NAV ================= -->
+  <header>
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <div class="logo">
+          <img src="images/logo.png" alt="GIC Gorangchaur Logo">
+          <div>
+            <h2>GIC Gorangchaur</h2>
+            <p>Shiksha • Sanskar • Vikas</p>
+          </div>
+        </div>
+        
+        <button class="nav-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="gallery.html">Facilities & Gallery</a></li>
+          <li><a href="notices.html">Fees & Notices</a></li>
+          <li><a href="activities.html" class="active">Activities & Quiz</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= PAGE HERO ================= -->
+    <section class="page-hero">
+      <div class="container">
+        <h1>Co-curricular Activities & Interactive Quiz</h1>
+        <p>Explore our co-curricular programs, tree plantation drives, civic workshops, and test your knowledge here.</p>
+      </div>
+    </section>
+
+    <!-- ================= CO-CURRICULAR ACTIVITIES SHOWCASE ================= -->
+    <section id="co-curricular" class="activities-section hidden-scroll">
+      <div class="container">
+        <div class="section-header">
+          <span class="subtitle">Beyond Academics</span>
+          <h2>School Events & Activities</h2>
+        </div>
+
+        <div class="card-grid">
+          <article class="preview-card">
+            <div class="preview-image">
+              <img src="images/gogreen.jpeg" alt="Students conducting Go Green environment rally">
+            </div>
+            <div class="preview-content">
+              <span class="notice-badge general" style="margin-bottom:10px; align-self:flex-start;">Eco Club</span>
+              <h3>Go Green Campaign</h3>
+              <p>Under our school Eco Club, students regularly conduct awareness rallies in local villages to promote plastic reduction, waste segregation, and tree conservation.</p>
+            </div>
+          </article>
+
+          <article class="preview-card">
+            <div class="preview-image">
+              <img src="images/environmentday1.jpeg" alt="Students planting tree saplings on Environment Day">
+            </div>
+            <div class="preview-content">
+              <span class="notice-badge general" style="margin-bottom:10px; align-self:flex-start;">Annual Event</span>
+              <h3>World Environment Day Drive</h3>
+              <p>Every year on June 5th, GIC Gorangchaur organizes an extensive tree plantation campaign. Students plant hundreds of native tree saplings across nearby mountain borders.</p>
+            </div>
+          </article>
+
+          <article class="preview-card">
+            <div class="preview-image">
+              <img src="images/civicsandawareness.jpeg" alt="Civic and constitutional awareness seminar for students">
+            </div>
+            <div class="preview-content">
+              <span class="notice-badge admission" style="margin-bottom:10px; align-self:flex-start;">Civics Club</span>
+              <h3>Civics & Social Awareness</h3>
+              <p>Workshops and debate meets organized to educate senior students about democratic rights, constitution duties, road safety precautions, and community hygiene standards.</p>
+            </div>
+          </article>
+
+          <article class="preview-card">
+            <div class="preview-image">
+              <img src="images/activities.jpeg" alt="Students participating in cultural folk dance competition">
+            </div>
+            <div class="preview-content">
+              <span class="notice-badge exam" style="margin-bottom:10px; align-self:flex-start;">Cultural</span>
+              <h3>Folk Arts & Cultural Meets</h3>
+              <p>Promoting traditional Kumaoni music, folk dances (Choliya, Jhora), and local drama arts to keep students connected to their rich Himalayan heritage.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= INTERACTIVE QUIZ GAME SECTION ================= -->
+    <section id="interactive-quiz" class="quiz-section section-bg hidden-scroll">
+      <div class="container">
+        <div class="section-header">
+          <span class="subtitle">Mind Games</span>
+          <h2>GIC Gorangchaur General Quiz</h2>
+          <p style="margin-top: 1rem; color: var(--text-muted);">Test your knowledge about general science, Geography of Uttarakhand, and the school system. Are you ready?</p>
+        </div>
+
+        <div class="quiz-container">
+          <!-- Start Screen -->
+          <div id="quiz-start-screen" class="quiz-start-screen active" style="text-align: center; padding: 20px 0;">
+            <div style="font-size: 5rem; margin-bottom: 1.5rem;">🧠</div>
+            <h3 style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">Uttarakhand & General Knowledge Challenge</h3>
+            <p style="margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">There are 6 multiple-choice questions. Take your time, select the correct option, read the explanations, and see how much you score!</p>
+            <button id="quiz-start-btn" class="btn btn-primary btn-secondary" style="font-size: 1.15rem; padding: 1rem 3rem;">Start Quiz Game</button>
+          </div>
+
+          <!-- Game Screen -->
+          <div id="quiz-game-screen" class="quiz-game-screen">
+            <div class="quiz-progress">
+              <div id="quiz-progress-bar" class="quiz-progress-bar"></div>
+            </div>
+            
+            <div class="quiz-header-info">
+              <span>Question: <span id="quiz-current-num">1</span>/<span id="quiz-total-num">6</span></span>
+              <span>Score: <span id="quiz-score-val">0</span></span>
+            </div>
+
+            <h3 id="quiz-question-text" class="quiz-question">What is the capital city of Uttarakhand?</h3>
+
+            <div id="quiz-options-container" class="quiz-options">
+              <!-- Dynamically populated buttons -->
+              <button class="quiz-opt-btn">Option 1</button>
+              <button class="quiz-opt-btn">Option 2</button>
+              <button class="quiz-opt-btn">Option 3</button>
+              <button class="quiz-opt-btn">Option 4</button>
+            </div>
+
+            <div id="quiz-feedback" class="quiz-feedback">
+              <!-- Correct/incorrect feedback text -->
+            </div>
+
+            <div class="quiz-controls">
+              <button id="quiz-next-btn" class="btn btn-primary" style="display: none; align-items:center; gap:8px;">Next Question &rarr;</button>
+            </div>
+          </div>
+
+          <!-- End Screen -->
+          <div id="quiz-end-screen" class="quiz-end-screen" style="text-align: center; padding: 25px 0;">
+            <div style="font-size: 5rem; margin-bottom: 1rem;">🎉</div>
+            <h3 style="font-size: 2.25rem; color: var(--primary); margin-bottom: 1.5rem;">Quiz Completed!</h3>
+            
+            <div class="quiz-results-summary">
+              <div class="quiz-score-badge">
+                <span id="quiz-final-score">0</span>/<span id="quiz-total-possible">6</span>
+              </div>
+              <p id="quiz-performance-summary" style="font-size: 1.25rem; font-weight: 500; color: var(--dark); max-width: 550px; margin: 0 auto 2.5rem;">Good attempt! Go back and browse the facilities and admissions page to learn more.</p>
+            </div>
+
+            <button id="quiz-restart-btn" class="btn btn-primary">Play Again</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Government Inter College Gorangchaur</h3>
+          <p>A premium public educational college located in Pithoragarh, Uttarakhand. Dedicated to providing holistic value-based education for children since over 50 years.</p>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="gallery.html">Facilities & Gallery</a></li>
+            <li><a href="notices.html">Fees & Notices</a></li>
+            <li><a href="activities.html">Activities & Quiz</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p>📍 Pithoragarh, Uttarakhand</p>
+          <p>📞 +91 9759220834</p>
+          <p>✉️ gorangchaur@gmail.com</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Government Inter College Gorangchaur. All Rights Reserved. Designed for Educational Excellence.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Popup Container -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true">
+    <button class="lightbox-close" aria-label="Close image popup">&times;</button>
+    <div class="lightbox-content">
+      <img src="" alt="">
+      <div class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- JS Scripts -->
+  <script src="js/script.js"></script>
+</body>
+</html>
